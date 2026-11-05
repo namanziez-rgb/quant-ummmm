@@ -1,0 +1,6 @@
+stim>=1.14
+pymatching>=2.2
+numpy
+matplotlib
+# FPGA flow (optional): Icarus Verilog for simulation, plus
+# yowasp-yosys and yowasp-nextpnr-ice40 for synthesis and place-and-route

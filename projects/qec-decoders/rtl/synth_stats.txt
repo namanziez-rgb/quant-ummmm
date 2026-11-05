@@ -1,0 +1,19 @@
+
+4. Printing statistics.
+
+=== timing_wrapper ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       34 wires
+       78 wire bits
+       34 public wires
+       78 public wire bits
+        8 ports
+       30 port bits
+       42 cells
+        1   $scopeinfo
+        9   SB_DFF
+       15   SB_DFFSR
+       17   SB_LUT4
+
