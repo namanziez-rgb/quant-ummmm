@@ -52,16 +52,12 @@ iverilog -g2005 -o sim tb_surface_code_d3_decoder.v surface_code_d3_decoder.v &&
 ./synth.sh
 ```
 
-## What this does not show
+## some caveats: working on stuff next?????
 
-- The FPGA part is simulated and synthesized. It has not run on a physical board.
+- The FPGA part is simulated and synthesized for now. The goal is to now run it on a physical board.
 - The lookup table only works because distance 3 is tiny. A rotated code of distance d has (d² − 1)/2
   checks of each type, so the table needs 2^((d²−1)/2) entries: 16 at d = 3, 4,096 at d = 5 and
-  16.7 million at d = 7. That exponential wall is why real-time decoders use algorithms such as
+  16.7 million at d = 7. This expo climb is why real-time decoders use algorithms such as
   union-find or clustering instead of tables.
-- The lookup-table decoder assumes perfect measurements. Part 1 includes measurement errors; part 2 does not.
+- The lookup table decoder assumes perfect measurements. Part 1 includes measurement errors; whereas for now part 2 does not.
 
-## Next
-
-A union-find decoder in Python first, then the same algorithm in hardware, with the same habit of
-testing every stage against a reference.
