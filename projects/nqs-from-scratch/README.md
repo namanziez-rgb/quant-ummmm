@@ -1,8 +1,7 @@
 # Neural quantum states from scratch
 
-A restricted Boltzmann machine wavefunction for the transverse-field Ising chain, written in plain
-NumPy with no physics libraries. I built it in stages and checked every stage against an exact
-answer before trusting the next one.
+A restricted Boltzmann machine wavefunction for the transverse-field Ising chain. 
+NumPy specific
 
 H = −J Σ σᶻᵢσᶻᵢ₊₁ − h Σ σˣᵢ, periodic boundaries, J = 1.
 
