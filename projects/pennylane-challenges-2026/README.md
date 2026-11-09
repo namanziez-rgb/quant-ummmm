@@ -17,21 +17,11 @@ The last folder is a bonus problem, where I did some extended work on an open en
 | 6 | [Unitary synthesis](06-unitary-synthesis/) | Silver, 21.06% below the Shannon decomposition | exactly 4ⁿ − 1 rotations, which is the floor |
 | 7 | [How many T gates does a unitary need?](07-how-many-t-gates/) | Gold needs whole-unitary Clifford+T synthesis | counting says the circuits exist; nobody knows how to find them |
 
-## What I took from it
 
-- **Check every stage against something exact.** Each solution here is tested against a closed form, a
-  known group size, or every possible input, not only the public test cases. That is how I caught a
-  grader that passes broken circuits in challenge 2.
-- **A grader measures its own procedure.** In challenge 3 the "right" answer was a local minimum reached by
-  one specific optimizer. Optimizing better would have failed.
-- **Count the parameters before writing code.** It explained why Grover gets stuck at M = N/2, why my
-  synthesis circuit cannot be beaten with rotations, and why Gold needs a different kind of circuit.
+## Working approach: elLM 
 
-## How I worked
-
-During the event I used Claude, Anthropic's AI model, as a tutor. It explained the physics, checked my
-reasoning and reviewed my code, and I wrote the submitted solutions myself, which QHack's staff confirmed
-was within the rules. After the event I went back through everything with Claude to verify each solution,
+A lot of the challenge problems were directly related or extensions of the problems that were provided in the Qhack prep and readme guides, and the walkthroughs and tutorials were of immense help atleast from the conceptual understanding part of things. Other than that Claude was my go-to collab partner, apart from my friend Denison who worked on some other problems. Used it to check my
+reasoning and review my code, and then I wrote the submitted solutions myself. After the event I felt like documenting some really interesting problems so I went back through everything with Claude to verify each solution,
 make the figures and write these notes. The T-count study in part 7 was done together with it.
 
 The problem statements are summarized in my own words, and the original challenges are Xanadu's, written for
