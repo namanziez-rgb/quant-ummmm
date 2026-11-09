@@ -1,0 +1,11 @@
+N=10 h=0.20  E_ED/N=-1.010025  E_RBM/N=-1.009971  rel.err=5.3e-05  fidelity=0.99986
+N=10 h=0.50  E_ED/N=-1.063560  E_RBM/N=-1.063478  rel.err=7.7e-05  fidelity=0.99979
+N=10 h=0.80  E_ED/N=-1.169094  E_RBM/N=-1.169007  rel.err=7.4e-05  fidelity=0.99985
+N=10 h=0.90  E_ED/N=-1.219187  E_RBM/N=-1.219099  rel.err=7.2e-05  fidelity=0.99985
+N=10 h=1.00  E_ED/N=-1.278491  E_RBM/N=-1.278443  rel.err=3.7e-05  fidelity=0.99993
+N=10 h=1.10  E_ED/N=-1.346610  E_RBM/N=-1.346590  rel.err=1.5e-05  fidelity=0.99998
+N=10 h=1.20  E_ED/N=-1.421775  E_RBM/N=-1.421766  rel.err=6.1e-06  fidelity=0.99999
+N=10 h=1.50  E_ED/N=-1.672302  E_RBM/N=-1.672301  rel.err=1.1e-06  fidelity=1.00000
+N=10 h=2.00  E_ED/N=-2.127121  E_RBM/N=-2.127120  rel.err=3.5e-07  fidelity=1.00000
+N=20 h=1.0  exact E/N=-1.274549  VMC E/N=-1.274375 ± 0.000052  rel.err=1.4e-04  var(E_loc)/N=1.27e-03
+N=40 h=1.0  exact E/N=-1.273567  VMC E/N=-1.273075 ± 0.000044  rel.err=3.9e-04  var(E_loc)/N=2.35e-03
