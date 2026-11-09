@@ -1,9 +1,11 @@
 # PennyLane coding challenges, QHack 2026
 
-In October 2026 I took part in the QHack 2026 coding challenges as part of a two-person team. These are
-the six I worked on, written up the way I wish I had seen them: the question, my answer, and why it
-works. Every folder has the solution, a script that checks it against something exact, and the figures.
-The last folder is where an unsolvable-looking challenge turned into a small study of its own.
+My team PewPewQew participated in the Qhack challenge this fall. Very fun, very challenging problems. These are
+the six I worked on, documented in the form: problem, solution and the approach.
+
+I have included the solution and the figures for each of the individual problems in the folders.
+
+The last folder is a bonus problem, where I did some extended work on an open ended research problem disguised as a challenge. Kudos to the teams who were able to successfully submit working solutions to that problem, IN 24 HOURS. Given that ITS LITERALLY AN OPEN PROBLEM.
 
 | | Challenge | Result | Approach (WHYYYYY?) |
 |---|---|---|---|
