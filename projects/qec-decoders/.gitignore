@@ -1,0 +1,5 @@
+__pycache__/
+rtl/sim
+rtl/build.json
+rtl/pnr.log
+rtl/pnr_report.json
