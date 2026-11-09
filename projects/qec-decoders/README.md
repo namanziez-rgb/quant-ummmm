@@ -1,9 +1,8 @@
-# Surface-code decoding: from simulation to FPGA logic
+# Surface-code decoding: Simu + FPGA
 
-I wanted to understand quantum error correction as an engineering problem, not just as theory.
+This is a documentation of my attempt to understand QEC with an engineering perspec.
 A code only protects information if its syndromes are decoded correctly and fast enough, on real
-hardware. This repo goes through that pipeline in three steps, and checks every step against
-something exact.
+hardware. The idea was to go through the info protection pipeline, proving the necessity of accurate and fast syndrome decoding.
 
 ## 1. Threshold of the rotated surface code (`surface_code/`)
 
@@ -23,7 +22,7 @@ python surface_code/threshold.py       # about 10 s
 python surface_code/plot_threshold.py
 ```
 
-## 2. My own decoder, checked against PyMatching (`lut/`)
+## 2. Attempt to build my own decoder, I benchmarked this against PyMatching (`lut/`)
 
 For distance 3 I wrote a lookup-table decoder: for each of the 16 possible syndromes of each check
 type, it stores a minimum-weight correction. Under code-capacity noise (errors on data qubits only,
@@ -37,12 +36,12 @@ perfect measurements) I compared it with PyMatching on all 512 error patterns, f
 python lut/lut_decoder.py
 ```
 
-## 3. The same decoder as FPGA logic (`rtl/`)
+## 3. Building the same decoder but now with FPGA logic (`rtl/`)
 
 `lut/export_rtl.py` generates the Verilog module and the test vectors from the same Python table,
 so the hardware and the reference cannot drift apart.
 
-- **Verification:** an Icarus Verilog testbench drives all 256 syndrome pairs, one per clock cycle,
+- **Verification:** An Icarus Verilog testbench drives all 256 syndrome pairs, one per clock cycle,
   and checks every output against Python. Result: 256 of 256 match. I also corrupted one expected value
   to make sure the testbench catches it, and it did.
 - **Synthesis:** Yosys and nextpnr for a Lattice iCE40 UP5K. The decoder uses 17 LUTs and 15 flip-flops,
