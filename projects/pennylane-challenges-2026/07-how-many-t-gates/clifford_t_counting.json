@@ -1,0 +1,35 @@
+[
+ {
+  "n": 1,
+  "clifford_group_size": 24,
+  "K_size": 8,
+  "upper_bound_per_T": 3,
+  "cosets_by_T_count": [
+   3,
+   6,
+   12,
+   24,
+   48,
+   96,
+   192,
+   384,
+   768,
+   1536,
+   3072,
+   6144
+  ]
+ },
+ {
+  "n": 2,
+  "clifford_group_size": 11520,
+  "K_size": 768,
+  "upper_bound_per_T": 15,
+  "cosets_by_T_count": [
+   15,
+   165,
+   1695,
+   16710,
+   161670
+  ]
+ }
+]

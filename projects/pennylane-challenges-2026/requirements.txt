@@ -1,0 +1,8 @@
+pennylane>=0.45
+numpy
+scipy
+matplotlib
+networkx
+# only for 07-how-many-t-gates/gridsynth_tcounts.py
+pygridsynth
+mpmath
