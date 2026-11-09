@@ -1,8 +1,7 @@
 # Surface-code decoding: Simu + FPGA
 
 This is a documentation of my attempt to understand QEC with an engineering perspec.
-A code only protects information if its syndromes are decoded correctly and fast enough, on real
-hardware. The idea was to go through the info protection pipeline, proving the necessity of accurate and fast syndrome decoding.
+The idea was to go through the info protection pipeline, proving the necessity of accurate and fast syndrome decoding, especially on real hardware.
 
 ## 1. Threshold of the rotated surface code (`surface_code/`)
 
