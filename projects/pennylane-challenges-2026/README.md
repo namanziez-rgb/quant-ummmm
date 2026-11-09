@@ -5,7 +5,7 @@ the six I worked on, written up the way I wish I had seen them: the question, my
 works. Every folder has the solution, a script that checks it against something exact, and the figures.
 The last folder is where an unsolvable-looking challenge turned into a small study of its own.
 
-| | Challenge | Result | The idea that made it work |
+| | Challenge | Result | Approach (WHYYYYY?) |
 |---|---|---|---|
 | 1 | [Certifying a GHZ state](01-ghz-parity-checks/) | score 1.0, with exactly the n required checks | X parity sees the coherence, ZZ parities pin the populations |
 | 2 | [Grover with half the list marked](02-grover-half-the-list/) | P(success) = 1 for all six oracles, one shot | a controlled oracle turns M/N = 1/2 into 1/4, which one step solves exactly |
